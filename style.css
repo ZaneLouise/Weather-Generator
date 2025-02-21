@@ -1,0 +1,168 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #FCFCF7;
+   
+
+}
+
+/* Header styling */
+header {
+    background-color: #2E4F4F;
+    border-radius: 20px; 
+    padding: 20px; 
+    text-align: center;
+    color: #cbe4de;
+    width: 80%; 
+    margin: 50px auto; 
+   
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.3); 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 128, 128, 0.5);
+}
+
+/* Input controls styling */
+#input-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Styling for input fields, buttons, and select elements */
+input, button, select {
+    padding: 12px;
+    margin: 0;
+    border: 1px solid rgba(211, 211, 211, 0.2); /* Very faint gray */
+    border-radius: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 200px;
+    max-width: 100%;
+}
+
+/* Button-specific styling */
+button {
+    background-color: #2E4F4F;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #2E4F4F;
+}
+
+/* Select dropdown styling */
+select {
+    background-color: #f1f1f1;
+}
+
+/* Loading message styling (hidden by default) */
+#loading {
+    display: none;
+}
+
+/* Results container styling */
+#results {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1500px;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* General styling for result boxes */
+.result-box {
+    display: -ms-inline-grid;
+    width: 48%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Image styling inside result boxes */
+.result-box img {
+    width: 80px;
+}
+
+/* Forecast item styling (individual forecast entry) */
+.forecast-item {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Styling for forecast item images */
+.forecast-item img {
+    width: 50px;
+}
+
+/* Styling for forecast item text */
+.forecast-item p {
+    margin: 5px 0;
+}
+
+/* Hourly forecast section styling (same as result box) */
+#hourly-forecast {
+    display: -ms-inline-grid;
+    width: 48%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Hourly item styling (individual hourly forecast entry) */
+.hour-item {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Styling for hourly forecast icons */
+.hour-item img {
+    width: 50px;
+}
+
+/* Styling for hourly forecast text */
+.hour-item p {
+    margin: 5px 0;
+}
+
+/* Footer styling the same as header for same visual*/
+footer {
+    background-color: #2E4F4F;
+    border-radius: 20px; 
+    padding: 20px; 
+    text-align: center;
+    color: #cbe4de;
+    width: 80%; 
+    margin: 50px auto; 
+}

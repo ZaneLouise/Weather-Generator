@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <title>Weather Forecaster and Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+        <header>
+            <h1>Weather Forecaster and Generator</h1>
+        </header>
+
+   <main> 
+       <!-- Input controls for city, search, and units -->
+        <div id="input-controls"> 
+            <input type="text" id="city" placeholder="Enter City Name" required> 
+
+            <!-- Dropdown to choose from Celsius or Fahrenheit units -->
+            <select id="unit"> <option value="metric">Celsius</option> <option value="imperial">Fahrenheit</option> </select> 
+            
+            <!-- Button to trigger fetching weather by city -->
+            <button onclick="getWeatherByCity()">Check Weather</button> 
+           
+            <!-- Button to trigger fetching weather based on the input location -->
+            <button onclick="getLocationWeather()">Use My Location</button> 
+           </div> 
+
+           <!-- Loading message while fetching weather data -->
+           <div id="loading">
+             Loading... 
+           </div> 
+
+           <!-- Results section where weather data will go -->
+           <div id="results">  
+
+            <!-- Current weather section -->
+            <div id="weather" class="result-box"> 
+             <h2>Current Weather</h2> 
+            </div>  
+
+            <!-- Hourly forecast section, where hourly weather predictions will go -->
+            <div id="hourly-forecast" class="result-box">
+                <h2>Hourly Forecast</h2> 
+                <div id="hourly-list"></div>
+            </div>         
+
+            <!-- 5-Day weather forecast section -->
+            <div id="forecast" class="result-box"> 
+             <h2>5-Day Forecast</h2> 
+             <p>In the next following days </p>
+             <div id="forecast-list"></div> 
+            </div> 
+           </div>  
+        
+    </main>
+    <footer>
+        <p><b> IPT PROJECT </b></p>
+    </footer>
+</div>
+</body>
+</html>
